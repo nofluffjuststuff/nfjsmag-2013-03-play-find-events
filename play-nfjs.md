@@ -105,7 +105,8 @@ import play.api.mvc._
 import play.api.libs.ws.WS
 import java.net.URLEncoder
 import play.api.Play._
-
+import scala.concurrent._
+import ExecutionContext.Implicits.global
 
 object Application extends Controller {
 
@@ -231,7 +232,7 @@ h2. Resources
 
 \[2\][http://www.last.fm/api]
 
-\[3\][https://github.com/nraychaudhuri/find_events]
+\[3\][https://github.com/nofluffjuststuff/nfjsmag-2013-03-nraychaudhuri/tree/master/find_events]
 
 \[4\][http://www.playframework.org/documentation/2.0/Installing]
 
