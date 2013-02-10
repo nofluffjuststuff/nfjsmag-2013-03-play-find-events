@@ -1,0 +1,15 @@
+@(message: String)(implicit request: RequestHeader)
+
+@helper.javascriptRouter("jsRoutes")(routes.javascript.Application.find)
+
+@main("Find Events for an artist") {
+  <div id="container">
+	 <h1>Find Events</h1>
+	 <form onsubmit="return false;">      
+	   <input type="text" name="artist" placeholder="Enter artist name" id="artistName"> 
+	   <input type="button" class="button search" value="find" id="findButton"/>
+	 </form>
+  </div>		
+  <div id="results">&nbsp;</div>	 
+
+}
